@@ -1,8 +1,8 @@
 <template>
   <div class="collabCards cardsWrapper">
     <v-layout row wrap>
-      <v-flex xs12>
-        <v-card class="collabCard grey lighten-4" v-for="idea in ideas">
+      <v-flex v-for="idea in ideas" :key="idea.id" xs12 sm6 md4>
+        <v-card class="collabCard grey lighten-4 elevation-1">
           <v-card-text>
             <div><h6>COLLABORATOR</h6></div>
             <div><h4>{{ idea.collab }}</h4></div>

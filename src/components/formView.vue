@@ -73,7 +73,9 @@
           </v-flex>
         </v-layout>
 
-        <v-btn dark default v-on:click.native="addIdea">Submit</v-btn>
+        <router-link to="/">
+          <v-btn dark default v-on:click.native="addIdea">Submit</v-btn>
+        </router-link>
       </v-container>
     </v-card-text>
   </v-card>
