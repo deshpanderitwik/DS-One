@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import formView from '../components/formView'
+import problemsView from '../components/problemsView'
 import truthsView from '../components/truthsView'
 import conceptsView from '../components/conceptsView'
 import collabsView from '../components/collabsView'
@@ -11,6 +12,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'problems',
+      component: problemsView
+    },
+    {
+      path: '/form',
       name: 'form',
       component: formView
     },

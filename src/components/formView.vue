@@ -74,9 +74,6 @@
         </v-layout>
 
         <v-btn dark default v-on:click.native="addIdea">Submit</v-btn>
-
-        <h1 v-for="idea in ideas">{{ idea.problem }}</h1>
-
       </v-container>
     </v-card-text>
   </v-card>

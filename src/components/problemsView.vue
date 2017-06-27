@@ -1,11 +1,11 @@
 <template>
-  <div class="truthCards cardsWrapper">
+  <div class="problemCards cardsWrapper">
     <v-layout row wrap>
       <v-flex xs12>
-        <v-card class="truthCard grey lighten-4" v-for="idea in ideas">
+        <v-card class="problemCard grey lighten-4" v-for="idea in ideas">
           <v-card-text>
-            <div><h6>TRUTH</h6></div>
-            <div><h4>{{ idea.truth }}</h4></div>
+            <div><h6>PROBLEM</h6></div>
+            <div><h4>{{ idea.problem }}</h4></div>
           </v-card-text>
         </v-card>
       </v-flex>
@@ -28,5 +28,5 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 </style>
